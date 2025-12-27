@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gopika K | Portfolio</title>
+
+<style>
+    /* STEP 0: Reset */
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #e6f7f8;
+    }
+
+    /* STEP 1: Center the main container */
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        margin: 30px auto;          /* CENTER ALIGNMENT */
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        overflow: hidden;
+    }
+
+    /* STEP 2: Center header text */
+    header {
+        background: linear-gradient(90deg, #007991, #78ffd6);
+        color: white;
+        text-align: center;        /* TEXT CENTER */
+        padding: 35px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 38px;
+    }
+
+    header p {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    /* STEP 3: Left align sections (default) */
+    section {
+        padding: 25px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+    h2 {
+        color: #007991;
+        margin-bottom: 15px;
+    }
+
+    /* STEP 4: Card alignment (vertical) */
+    .card {
+        background: #f0fbfc;
+        padding: 18px;
+        border-radius: 10px;
+        margin-bottom: 12px;
+    }
+
+    /* STEP 5: Skills alignment using FLEX */
+    .skills {
+        display: flex;             /* FLEX ALIGNMENT */
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;   /* CENTER SKILLS */
+    }
+
+    .skills span {
+        background: #007991;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    /* STEP 6: List alignment */
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin: 8px 0;
+    }
+
+    /* STEP 7: Extra curricular highlight */
+    .achievement {
+        background: #eafff5;
+        border-left: 6px solid #00b894;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    /* STEP 8: Center footer text */
+    footer {
+        background: #007991;
+        color: white;
+        text-align: center;        /* FOOTER CENTER */
+        padding: 18px;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+        <h1>GOPIKA K</h1>
+        <p>Computer Science Engineering Student</p>
+    </header>
+
+    <!-- ABOUT -->
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I am a Computer Science Engineering student interested in web designing,
+            UI/UX, and programming. I enjoy learning new technologies and building
+            creative academic projects.
+        </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+        <h2>Education</h2>
+
+        <div class="card">
+            <b>Bannari Amman Institute of Technology</b><br>
+            Computer Science and Engineering<br>
+            <i>2024 – 2028</i><br>
+            <b>CGPA:</b> 7.59% (upto 2nd sem)
+        </div>
+
+        <div class="card">
+            <b>Government High School, Vadugapatti</b><br>
+            graduated:2022<br>
+            <b>10th Percentage:</b> 89%
+        </div>
+
+        <div class="card">
+            <b>Government Higher Secondary School, Mugasi Anumanpalli</b><br>
+            graduated:2024<br>
+            <b>12th Percentage:</b> 88%
+        </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section>
+        <h2>Technical Skills (Basics)</h2>
+        <div class="skills">
+            <span>Basics of C Programming</span>
+            <span>Basics of HTML</span>
+            <span>Basics of CSS</span>
+            <span>Basics of Python</span>
+            <span>Basics of UI / UX</span>
+            <span>Web Page Designing</span>
+        </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section>
+        <h2>Languages Known</h2>
+        <ul>
+            <li>Tamil</li>
+            <li>English</li>
+        </ul>
+    </section>
+
+    <!-- EXTRA CURRICULAR -->
+    <section>
+        <h2>Extra-Curricular Activities</h2>
+        <div class="achievement">
+            🏆 <b>Carrom – Zonal Level Winner</b><br>
+            Participated and secured winning position in zonal level competitions.
+        </div>
+    </section>
+
+    <!-- PROJECT FEATURES -->
+    <section>
+        <h2>Project Features</h2>
+        <ul>
+            <li>Personal Portfolio Website</li>
+            <li>Designed using only HTML and CSS</li>
+            <li>Clean alignment and layout</li>
+            <li>Beginner friendly project</li>
+        </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Gopika K | Student Portfolio
+    </footer>
+
+</div>
+
+</body>
+</html>
