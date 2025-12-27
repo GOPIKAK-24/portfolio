@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Music Playlist</title>
+
+<style>
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* PAGE */
+body{
+    background: linear-gradient(to right, #414998, #d97f9c);
+    min-height:100vh;
+}
+
+/* HEADER */
+.header{
+    text-align:center;
+    padding:25px;
+    color:#ce8686;
+    font-size:28px;
+    font-weight:600;
+}
+
+/* PLAYLIST CONTAINER */
+.playlist{
+    max-width:550px;
+    margin:0 auto;
+    padding-bottom:30px;
+}
+
+/* SONG CARD */
+.song{
+    background:#fcdada;
+    margin:15px;
+    padding:18px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.song:hover{
+    transform: translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* SONG TEXT */
+.song h3{
+    font-size:18px;
+    margin-bottom:4px;
+    color:#222;
+}
+
+.song p{
+    font-size:14px;
+    color:#666;
+    margin-bottom:10px;
+}
+
+/* AUDIO */
+audio{
+    width:100%;
+    margin-top:5px;
+}
+
+/* OPTIONS */
+.options{
+    margin-top:10px;
+    font-size:13px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.options a{
+    text-decoration:none;
+    color:#c33764;
+    font-weight:600;
+}
+
+.options span{
+    color:#888;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    font-size:13px;
+    color:#eee;
+    margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">🎧 My Music Playlist</div>
+
+<div class="playlist">
+
+    <!-- SONG 1 -->
+    <div class="song">
+        <h3>Be Mine</h3>
+        <p>My Playlist</p>
+        <audio controls preload="metadata" loop>
+            <source src="Be_Mine.mp3" type="audio/mpeg">
+        </audio>
+        <div class="options">
+            <a href="Be_Mine.mp3" download> Download</a>
+            <span>Loop Enabled</span>
+        </div>
+    </div>
+
+    <!-- SONG 2 -->
+    <div class="song">
+        <h3>Rebirth</h3>
+        <p>BTS</p>
+        <audio controls preload="metadata">
+            <source src="Rebirth.mp3" type="audio/mpeg">
+        </audio>
+        <div class="options">
+            <a href="Rebirth.mp3" download> Download</a>
+        </div>
+    </div>
+
+    <!-- SONG 3 -->
+    <div class="song">
+        <h3>Slow Dance</h3>
+        <p>BTS</p>
+        <audio controls preload="metadata">
+            <source src="Slow_Dance.mp3" type="audio/mpeg">
+        </audio>
+        <div class="options">
+            <a href="Slow_Dance.mp3" download> Download</a>
+        </div>
+    </div>
+
+    <!-- SONG 4 -->
+    <div class="song">
+        <h3>Smeraldo</h3>
+        <p>BTS</p>
+        <audio controls preload="metadata">
+            <source src="Smeraldo.mp3" type="audio/mpeg">
+        </audio>
+        <div class="options">
+            <a href="Smeraldo.mp3" download> Download</a>
+        </div>
+    </div>
+
+    <!-- SONG 5 -->
+    <div class="song">
+        <h3>Closer Than This</h3>
+        <p>BTS</p>
+        <audio controls preload="metadata">
+            <source src="Closer_Than_This.mp3" type="audio/mpeg">
+        </audio>
+        <div class="options">
+            <a href="Closer_Than_This.mp3" download> Download</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    Created by Gopika | HTML & CSS Music Playlist
+</footer>
+
+</body>
+</html>
